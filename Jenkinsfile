@@ -4,7 +4,7 @@ node {
         
   stage ('Build') {
   def M2_HOME=tool name: 'Maven', type: 'maven'
-  sh "${M2_HOME}/bin/mvn install"
+  sh "/opt/apache-maven-3.6.1/bin/mvn install"
   }
   }
      
