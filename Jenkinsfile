@@ -3,8 +3,8 @@ node {
     checkout scm
         
   stage ('Build') {
-  def M2_HOME=tool name: 'maven_3_6_0', type: 'maven'
-  sh "/opt/apache-maven-3.6.1/bin/mvn install"
+  def M2_Home=tool name: 'maven_3_6_0', type: 'maven'
+  sh "${M2_Home}/bin/mvn install"
   }
   }
      
